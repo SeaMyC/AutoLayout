@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.odpautolayout.AutoLayout
+        android:id="@+id/autoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:animateLayoutChanges="true"
+        android:padding="5dp"
+        app:childPadding="8"
+        app:childSpacing="10"
+        app:childTextBackgroundColor="#C0C0C0"
+        app:childTextBackgroundResource="@drawable/select_auto_background"
+        app:childTextColor="#797777"
+        app:childTextSize="13"
+        app:childTopPadding="10"/>
+
+
+    <Button
+        android:text="添加一堆"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="click"/>
+    <Button
+        android:text="添加一个"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="oneClick"/>
+</LinearLayout>
